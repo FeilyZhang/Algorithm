@@ -72,7 +72,7 @@ public class QuickSort {
             src[begin] = src[i];
             src[i] = temp;
             /*
-             * 对左右两部分再进行处理
+             * 对左右两部分再进行递归处理
              */
             quickSort(src, begin, i - 1);
             quickSort(src, i + 1, end);
